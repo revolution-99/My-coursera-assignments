@@ -8,6 +8,7 @@ header {
     margin-bottom: 55px;
     margin-left: -8px;
     padding: 20px 35px 20px 8px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .container{
     display: flex;
@@ -16,21 +17,21 @@ header {
 }
 .chicken {
     margin-right: 25px;
+    /* margin-left: 25px; */
     border: 1px solid chocolate;
     padding: 1px 10px 1px 10px;
-    /* height: 400px; */
 }
 .sushi {
     margin-right: 25px;
     border: 1px solid chocolate;
     padding: 1px 10px 1px 10px;
-    /* height: 400px; */
+    
 }
 .beef {
     margin-right: 25px;
     border: 1px solid chocolate;
     padding: 1px 10px 1px 10px;
-    /* height: 400px;    */
+      
 }
 h3{
     font-family: 'Times New Roman', Times, serif;
@@ -40,10 +41,24 @@ h3{
 p{
     color: steelblue;
 }
+  
+  
+/* .head a {
+    float: right;
+    font-size: 16px; */ */
+    /* color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  */
+ 
 .dropdown {
     float: right;
     overflow: hidden;
 }
+  
+  
 .dropdown .dropbtn {
     float: right;
     color: red;
@@ -52,17 +67,24 @@ p{
     font-family: inherit;
     margin: -39px 1px 0px 1px
   }
-.head a:hover, .dropdown:hover .dropbtn {
+  
+ 
+  .head a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(155, 167, 240);
   }
-.dropdown-content {
+  
+ 
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(203, 228, 243);
+    /* min-width: 160px; */
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgb(187, 154, 154);
     /* z-index: 1; */
   }
+  
+  
 .dropdown-content a {
     float: none;
     color: rgb(30, 37, 37);
@@ -71,9 +93,14 @@ p{
     display: block;
     text-align: center;
   }
+  
+ 
   .dropdown-content a:hover {
     background-color: rgb(250, 183, 235);
   }
+  
+  
+ 
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -90,6 +117,11 @@ p{
         margin: 1px -35px 1px 10px;
 
     }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .container{
+    flex-direction: column;
+  }
 }
 @media (min-width: 992px) {
     .dropdown{
